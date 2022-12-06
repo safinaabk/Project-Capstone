@@ -1,0 +1,13 @@
+@media all and (max-width:1000px){
+    
+    .flex {
+        /* display: none; */
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width:600px){
+    .container{
+        padding: 0 18px;
+    }
+}
