@@ -12,8 +12,11 @@ body {
   margin: 0;
   padding: 0;
 }
-
-input,
+.app-container {
+  min-height: 100vh;
+  transition: all ease-in-out 0.5s;
+}
+/* input,
 textarea {
   padding: 12px;
   margin: 12px 0;
@@ -28,23 +31,29 @@ input::placeholder,
 textarea::placeholder {
   color: #aaa;
   font-weight: bold;
-}
+} */
 
-.cafe-app__header {
+header {
   padding: 1em;
   min-width: 100%;
-  position: fixed;
+  position: sticky;
+  top: 0;
   display: flex;
   text-align: center;
   z-index: 9999;
-  background: #ede4e0;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
-  backdrop-filter: blur(3.8px);
-  -webkit-backdrop-filter: blur(3.8px);
-  border: 1px solid rgba(255, 255, 255, 0.38);
+  /* From https://css.glass */
+  background: rgba(237, 228, 224, 0.59);
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.6px);
+  -webkit-backdrop-filter: blur(5.6px);
+  border: 1px solid rgba(237, 228, 224, 0.22);
+  /* border-radius: 0 0 10px 10px;
+  background: #c9bb9c;
+  box-shadow: 5px 5px 4px #c3b597, -5px -5px 4px #cfc1a1; */
 }
 
-.cafe-app__header h1 {
+header h1 {
   margin: auto;
   width: 40%;
   text-transform: uppercase;
@@ -71,15 +80,95 @@ a:hover {
   background-color: black;
   color: white;
 }
+/* jumbotron */
+.jumbotron {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+}
+.jumbo_title {
+  position: absolute;
+  top: 5em;
+  text-align: center;
+  min-width: 100%;
+  padding: 10px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 1500;
+}
+.jumbo_desc {
+  text-align: center;
+  position: absolute;
+  top: 10em;
+  color: white;
+  min-width: 100%;
+}
+/* list cafe */
+.cafe-list {
+  width: 80%;
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  padding: 16px 8px;
+}
+/* itembody */
+.cafe-item {
+  padding: 16px;
+  border-top: 5px solid;
+  /* width: 25%; */
+  background: #ede4e0;
+  border-radius: 14px;
+  backdrop-filter: blur(8.4px);
+  -webkit-backdrop-filter: blur(8.4px);
+  border: 1px solid #aa7000;
+  /* background: #e0e0e0; */
+  /* box-shadow: 5px 5px 9px #cccccc, -5px -5px 9px #f4f4f4; */
+  /* box-shadow: rgba(0, 0, 0, 0.25); */
+  box-shadow: 5px 5px 4px #c1c1c1, -5px -5px 4px #ffffff;
+}
+.cafe-item__header {
+  position: relative;
+  padding: 0.5em;
+}
+.cafe-item__header > img {
+  padding: 8px;
+  padding: 15px 5px 0;
+}
+.cafe-item__body {
+  text-align: center;
+}
+.cafe-body__title {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 2px;
+}
+.cafe-item__location {
+  padding: 1em;
+}
+.cafe-body__description {
+  text-align: justify;
+  padding: 15px;
+}
 
-/* main-nya */
-.cafe-app__body {
+/* detail page */
+.detail-page__container {
+  width: 80%;
+}
+.detail-page__title {
+  text-align: center;
+  margin-top: 20%;
+  color: black;
+}
+
+/* .cafe-app__body {
   width: 100%;
   margin: 16px auto;
   padding: 12px;
   margin: 0 auto;
   overflow: hidden;
-}
+} */
 
 .note-app__body h2 {
   font-weight: normal;
@@ -215,23 +304,23 @@ a:hover {
 }
 
 @media only screen and (min-width: 500px) {
-  .notes-list {
+  .cafe-list {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media only screen and (min-width: 800px) {
-  .notes-list {
+  .cafe-list {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .note-search input {
+  .cafe-search input {
     min-width: 400px;
   }
 }
 
 @media only screen and (min-width: 800px) {
-  .notes-list {
+  .cafe-list {
     grid-template-columns: repeat(4, 1fr);
   }
 }
