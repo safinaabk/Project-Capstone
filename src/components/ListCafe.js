@@ -1,20 +1,23 @@
 import React from 'react';
-import CafeItemContainer from './CafeItemContainer';
+import PropTypes from 'prop-types';
+import { useEffect, useState } from 'react';
+import CafeItem from './CafeItem';
 
 function ListCafe({ cafes }) {
+  if (!cafes.length) {
+    return <p>No notes found</p>;
+  }
   return (
-    <>
-      {cafes.length !== 0 ? (
-        <div className="cafes-list">
-          {cafes.map((cafe) => (
-            <CafeItemContainer key={cafe.id} id={cafe.id} {...cafe} />
-          ))}
-        </div>
-      ) : (
-        <div className="cafe-list__empty-message">Belum ada List Cafe</div>
-      )}
-    </>
+    <div className="cafe-list">
+      {cafes.map((cafe) => (
+        <CafeItem key={cafe.id} {...cafe} />
+      ))}
+    </div>
   );
 }
+
+ListCafe.propTypes = {
+  cafes: PropTypes.array.isRequired,
+};
 
 export default ListCafe;
