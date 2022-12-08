@@ -11,11 +11,12 @@ class HomePage extends React.Component {
       cafes: getAllCafes(),
     };
   }
+
   render() {
     return (
       <section>
         <CafeAppJumbotron />
-        <h2>Recomendation Cafe</h2>
+        <h2 className='home_jumbotron'>Choose Your favorite Cafe</h2>
         <ListCafe cafes={this.state.cafes} />
       </section>
     );
