@@ -11,6 +11,7 @@ body {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+  background-color: #ede4e0;
 }
 .app-container {
   min-height: 100vh;
@@ -104,6 +105,16 @@ a:hover {
   color: white;
   min-width: 100%;
 }
+.home_jumbotron {
+  background: rgba(237, 228, 224, 0.59);
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.6px);
+  -webkit-backdrop-filter: blur(5.6px);
+  border: 1px solid rgba(237, 228, 224, 0.22);
+  text-align: center;
+  padding: 15px;
+}
 /* list cafe */
 .cafe-list {
   width: 80%;
@@ -158,7 +169,6 @@ a:hover {
 }
 .detail-page__title {
   text-align: center;
-  margin-top: 20%;
   color: black;
 }
 
