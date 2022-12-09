@@ -9,11 +9,12 @@ function CafeItem({ id, title, location, description }) {
         <img src="/images/aadk.png" alt="" />
       </div>
       <div className="cafe-item__body">
-        <h4 className="cafe-item__title">
-          <Link to={`/cafes/${id}`}>{title}</Link>
-        </h4>
+        <h4 className="cafe-item__title">{title}</h4>
         <h6 className="cafe-item__location">{location}</h6>
-        <p className="cafe-item__description">{description}</p>
+        {/* <p className="cafe-item__description">{description}</p> */}
+        <p className="read_more">
+          <Link to={`/cafes/${id}`}>Read More</Link>
+        </p>
       </div>
     </div>
   );
