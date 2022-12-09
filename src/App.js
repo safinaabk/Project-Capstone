@@ -19,7 +19,7 @@ function App() {
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/safinabulan/" target="_blank">
+              <a href="https://github.com/safinaabk/Project-Capstone" target="_blank">
                 About Us
               </a>
             </li>
