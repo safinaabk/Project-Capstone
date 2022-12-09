@@ -1,9 +1,5 @@
 import React from 'react';
-import { Routes, Link, Route } from 'react-router-dom';
-import { useEffect, useState } from 'react';
-import CafeAppJumbotron from './components/CafeAppJumbotron';
-import { getInitialData } from './utils/index';
-import ListCafes from './components/ListCafe';
+import { Routes, Route } from 'react-router-dom';
 import CafeAppFooter from './components/CafeAppFooter';
 import HomePage from './pages/HomePage';
 import DetailPage from './pages/DetailPage';
@@ -47,43 +43,5 @@ function App() {
     </div>
   );
 }
-// function App() {
-//   const [cafes, setCafe] = useState([]);
-//   useEffect(() => {
-//     dbapi.collection('listcafe').onSnapshot((snapshot) => {
-//       setCafe(snapshot.docs);
-//     });
-//   }, []);
-//   return (
-//     <div>
-//       <CafeAppHeader />
-//       <div className="main_body">
-//         <CafeAppJumbotron />
-//         <ListCafe cafes={cafes} />
-//       </div>
-//       <CafeAppFooter />
-//     </div>
-//   );
-// }
-// {
-
-//   render() {
-//     const [cafes, setCafe] = useState([]);
-//     useEffect(() => {
-//       dbapi.collection('listcafe').onSnapshot(snapshot);
-//     }, []);
-//     // const cafes = getInitialData();
-//     return (
-//       <div>
-//         <CafeAppHeader />
-//         <div className="main_body">
-//           <CafeAppJumbotron />
-//           <ListCafe cafes={cafes} />
-//         </div>
-//         <CafeAppFooter />
-//       </div>
-//     );
-//   }
-// }
 
 export default App;
