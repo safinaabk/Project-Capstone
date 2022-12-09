@@ -8,7 +8,7 @@ function ListCafe({ cafes }) {
     return <p>No notes found</p>;
   }
   return (
-    <div className="cafe-list">
+    <div className="cafe-list" id="list_cafe">
       {cafes.map((cafe) => (
         <CafeItem key={cafe.id} {...cafe} />
       ))}

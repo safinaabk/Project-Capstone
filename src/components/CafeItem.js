@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-function CafeItem({ id, title, location, description }) {
+function CafeItem({ id, title, image, location, description }) {
   return (
     <div className="cafe-item">
       <div className="cafe-item__header">
-        <img src="/images/aadk.png" alt="" />
+        <img src={image} alt="" />
       </div>
       <div className="cafe-item__body">
         <h4 className="cafe-item__title">{title}</h4>

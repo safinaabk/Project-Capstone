@@ -24,7 +24,9 @@ function App() {
               </a>
             </li>
             <li>
-              <a href="#/login">LOGIN</a>
+              <a href="https://wa.me/6285162525699?text=Halo%20selamat%20pagi,%20saya%20ingin%20reservasi" target="_blank">
+                reservasi
+              </a>
             </li>
           </ul>
         </nav>
