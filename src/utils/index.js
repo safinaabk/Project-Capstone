@@ -2,6 +2,7 @@ let cafes = [
   {
     id: 'cafe-1',
     title: 'Mélanger Les Space ',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7lHmnrAAQ0YlPZdcE1IMQVKmD-69kKh7LuHJ3dtizb0CGHNi6aqjXZbkMaA5JONzIdw0&usqp=CAU',
     location: 'Jl. H. Wasyid No.5',
     description: 'Salah satu cafe di Bandung yang aesthetic dan instagramable. Selain itu, tersedia makanan yang rasanya dijamin worth it sesuai dengan harganya',
     foodprice: '23.0 - 38.0',
