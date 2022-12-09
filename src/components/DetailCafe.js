@@ -1,36 +1,54 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { VscLocation } from 'react-icons/vsc';
+import { BiFoodMenu, BiCoffeeTogo } from 'react-icons/bi';
+import { TbCalendarStats } from 'react-icons/tb';
+import { RiRestaurant2Fill } from 'react-icons/ri';
+import { BsCashCoin } from 'react-icons/bs';
 
-function DetailCafe({ id, title, image, location, description, foodprice, reservasi }) {
+function DetailCafe({ id, title, image, location, drinkprice, foodprice, category, reservasi, time, bayar, rasa, kebersihan, kenyamanan, pelayanan }) {
   return (
     <div className="detail-page__container">
       <h2 className="detail-page__title">{title}</h2>
       <div className="detail-header">
         <img className="detail-header__gambar" src={image} alt="" width="30%" />
         <div className="detail-header__keterangan">
-          <h4 className="detail-header__location">location: {location}</h4>
-          <p className="detail-header__category">cafe and resto</p>
-          <p className="detail-header__time">Senin - Jumat (09.00 - 23.00 WIB)</p>
-          <p className="detail-header__foodprice">{foodprice}</p>
-          <p className="detail-header__payment">payment: cash , debit, QRIS</p>
+          <h4 className="detail-header__location">
+            <VscLocation /> {location}
+          </h4>
+          <p className="detail-header__category">
+            {' '}
+            <BiFoodMenu /> {category}
+          </p>
+          <p className="detail-header__time">
+            <TbCalendarStats /> {time}
+          </p>
+          <p className="detail-header__foodprice">
+            <RiRestaurant2Fill /> {foodprice}
+          </p>
+          <p className="detail-header__drinkprice">
+            <BiCoffeeTogo /> {drinkprice}
+          </p>
+          <p className="detail-header__payment">
+            <BsCashCoin /> {bayar}
+          </p>
         </div>
       </div>
       <div className="detail-page__rating">
         <div className="card-rating">
           <div className="card-rating__name"> Rasa </div>
-          <div className="card-rating__nilai">4.5</div>
+          <div className="card-rating__nilai">{rasa}</div>
         </div>
         <div className="card-rating">
           <div className="card-rating__name">Kebersihan</div>
-          <div className="card-rating__nilai">4.5</div>
+          <div className="card-rating__nilai">{kebersihan}</div>
         </div>
         <div className="card-rating">
           <div className="card-rating__name">Kenyamanan</div>
-          <div className="card-rating__nilai">4.5</div>
+          <div className="card-rating__nilai">{kenyamanan}</div>
         </div>
         <div className="card-rating">
           <div className="card-rating__name">Pelayanan</div>
-          <div className="card-rating__nilai">4.5</div>
+          <div className="card-rating__nilai">{pelayanan}</div>
         </div>
       </div>
       <div className="detail-body">{/* <p className="detail-page__description">{description}</p> */}</div>
@@ -38,18 +56,11 @@ function DetailCafe({ id, title, image, location, description, foodprice, reserv
         {' '}
         <a href={reservasi} target="_blank">
           {' '}
-          reservasi
+          Contact Us
         </a>
       </div>
     </div>
   );
 }
-
-DetailCafe.propTypes = {
-  title: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  foodprice: PropTypes.string.isRequired,
-};
 
 export default DetailCafe;

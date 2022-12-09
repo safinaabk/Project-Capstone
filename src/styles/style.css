@@ -11,7 +11,7 @@ body {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  background-color: #ede4e0;
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 .app-container {
   min-height: 100vh;
@@ -150,6 +150,7 @@ a:hover {
   width: 100%;
   padding: 8px;
   padding: 15px 5px 0;
+  max-height: 15em;
 }
 /* .cafe-item__body {
   text-align: left;
