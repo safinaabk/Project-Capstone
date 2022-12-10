@@ -20,7 +20,8 @@ a:hover {
   color: #b00020;
 }
 .app-container {
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  width: 100%;
   transition: all ease-in-out 0.5s;
 }
 
@@ -315,19 +316,69 @@ nav a {
   border: 1px solid rgba(237, 228, 224, 0.22);
 }
 
-@media only screen and (min-width: 500px) {
+@media screen and (max-width: 600px) {
+  .app-container {
+    width: 100%;
+  }
+
+  .detail-header {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+  }
+  .detail-header__gambar {
+    margin-left: 10%;
+    width: 80%;
+  }
+  .detail-header__keterangan {
+    width: 80%;
+  }
+  .detail-page__rating {
+    display: list-item;
+  }
+  .card-rating {
+    width: 80%;
+  }
+  .information_container {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .information_container {
+    display: flex;
+    margin-left: 30%;
+  }
+}
+
+@media screen and (min-width: 500px) {
   .cafe-list {
     grid-template-columns: 1fr 1fr;
   }
-}
 
-@media only screen and (min-width: 800px) {
-  .cafe-list {
-    grid-template-columns: repeat(3, 1fr);
+  .app-container {
+    width: 100%;
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media screen and (min-width: 800px) {
+  .cafe-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .detail-page__rating {
+    display: flex;
+    margin-left: 0;
+  }
+
+  .information_container {
+    margin-left: 35%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
   .cafe-list {
     grid-template-columns: repeat(4, 1fr);
   }
