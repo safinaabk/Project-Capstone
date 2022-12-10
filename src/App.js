@@ -17,7 +17,7 @@ function App() {
               </a>
             </li>
             <li>
-              <a className="navigation" href="https://github.com/safinaabk/Project-Capstone" target="_blank">
+              <a className="navigation" href="https://github.com/safinaabk/Project-Capstone">
                 About Us
               </a>
             </li>
