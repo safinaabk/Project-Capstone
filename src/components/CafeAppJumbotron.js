@@ -1,4 +1,5 @@
 import React from 'react';
+import { BsChevronDown } from 'react-icons/bs';
 
 function CafeAppJumbotron() {
   return (
@@ -18,6 +19,12 @@ function CafeAppJumbotron() {
             <p id="isi">
               Salah satu website yang menampilkan rekomendasi dan informasi berbagai coffeshop di Kota Bandung. Selain itu, anda dapat langsung melakukan reservasi terhadap coffeshop yang telah anda pilih dan menghubungkan anda langsung
               dengan coffeshop tersebut{' '}
+            </p>
+            <p className="read-more_list">
+              <a href="#list_cafe">
+                {' '}
+                <BsChevronDown /> read more
+              </a>
             </p>
           </article>
         </div>
