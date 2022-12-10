@@ -32,16 +32,12 @@ header {
   display: flex;
   text-align: center;
   z-index: 9999;
-  /* From https://css.glass */
   background: rgba(237, 228, 224, 0.59);
   border-radius: 0 0 16px 16px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5.6px);
   -webkit-backdrop-filter: blur(5.6px);
   border: 1px solid rgba(237, 228, 224, 0.22);
-  /* border-radius: 0 0 10px 10px;
-  background: #c9bb9c;
-  box-shadow: 5px 5px 4px #c3b597, -5px -5px 4px #cfc1a1; */
 }
 
 header h1 {
@@ -74,7 +70,7 @@ nav a {
   background-color: black;
   color: white;
 }
-/* jumbotron */
+
 .jumbotron {
   position: relative;
   align-items: center;
@@ -86,6 +82,7 @@ nav a {
 .jumbotron_gambar {
   align-items: left;
 }
+
 .read-more_list {
   margin-top: 5%;
   width: fit-content;
@@ -105,6 +102,7 @@ nav a {
   color: black;
   transform: translateY(-7px);
 }
+
 .search_container {
   width: 40%;
   margin: 25px auto auto auto;
@@ -121,7 +119,6 @@ nav a {
   font-size: large;
   text-align: center;
 }
-
 .search_container > input::placeholder {
   font-size: large;
 }
@@ -131,6 +128,7 @@ nav a {
   width: 50%;
   padding: 10px;
 }
+
 .jumbo_title {
   margin-top: 20%;
 }
@@ -147,28 +145,23 @@ nav a {
   letter-spacing: 2px;
   font-weight: bolder;
 }
-/* list cafe */
+
 .cafe-list {
-  /* width: 80%; */
   margin-top: 32px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
   padding: 16px 8px;
 }
-/* itembody */
+
 .cafe-item {
   padding: 16px;
   border-top: 5px solid;
-  /* width: 25%; */
   background: #ede4e0;
   border-radius: 14px;
   backdrop-filter: blur(8.4px);
   -webkit-backdrop-filter: blur(8.4px);
   border: 1px solid #aa7000;
-  /* background: #e0e0e0; */
-  /* box-shadow: 5px 5px 9px #cccccc, -5px -5px 9px #f4f4f4; */
-  /* box-shadow: rgba(0, 0, 0, 0.25); */
   box-shadow: 5px 5px 4px #c1c1c1, -5px -5px 4px #ffffff;
 }
 .cafe-item__header {
@@ -210,7 +203,6 @@ nav a {
   transform: translateY(-7px);
 }
 
-/* detail page */
 .detail-page__container {
   margin: 3em;
 }
@@ -240,7 +232,6 @@ nav a {
 .detail-header__keterangan {
   width: 50%;
   margin: auto;
-  /* padding: 5em; */
   padding: 15px;
 }
 .detail-header__location,
@@ -255,7 +246,6 @@ nav a {
 .detail-page__rating {
   display: inline-flex;
   text-align: center;
-  /* margin-left: 25%; */
 }
 .card-rating {
   min-width: 9em;
@@ -290,18 +280,11 @@ nav a {
 }
 .contact_reservasi,
 .contact_information {
-  /* z-index: 9999; */
   position: relative;
   width: fit-content;
-  /* margin-top: 10%; */
-  /* margin-left: 68%; */
-  /* bottom: 82px;
-  right: 107px; */
-  /* display: flex; */
   padding: 1.3em 3em;
   font-size: 12px;
   text-transform: uppercase;
-  /* letter-spacing: 1px; */
   font-weight: 500;
   color: #000;
   background-color: #fff;
@@ -320,7 +303,6 @@ nav a {
   transform: translateY(-7px);
 }
 
-/* footer */
 .cafe-app__footer {
   text-align: center;
   padding: 1em;
@@ -342,10 +324,6 @@ nav a {
 @media only screen and (min-width: 800px) {
   .cafe-list {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .cafe-search input {
-    min-width: 400px;
   }
 }
 
