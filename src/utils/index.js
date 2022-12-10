@@ -14,6 +14,7 @@ let cafes = [
     kebersihan: '4.7',
     kenyamanan: '4.5',
     pelayanan: '4.5',
+    ig: 'https://www.instagram.com/melanger___/?next=%2F&hl=id',
   },
   {
     id: 'cafe-2',
@@ -30,6 +31,7 @@ let cafes = [
     kebersihan: '4.4',
     kenyamanan: '4.5',
     pelayanan: '4.4',
+    ig: 'https://www.instagram.com/hanamiskylounge/?next=%2F&hl=id',
   },
   {
     id: 'cafe-3',
@@ -46,6 +48,7 @@ let cafes = [
     kebersihan: '4.5',
     kenyamanan: '4.2',
     pelayanan: '4.4',
+    ig: 'https://www.instagram.com/thesokoctc/?next=%2F&hl=id',
   },
 
   {
@@ -63,6 +66,7 @@ let cafes = [
     kebersihan: '4.5',
     kenyamanan: '4.4',
     pelayanan: '4.3',
+    ig: 'https://www.instagram.com/simpangwangi/?next=%2F&hl=id',
   },
   {
     id: 'cafe-5',
@@ -79,6 +83,7 @@ let cafes = [
     kebersihan: '4.5',
     kenyamanan: '4.7',
     pelayanan: '4.5',
+    ig: 'https://www.instagram.com/upnormalcoffeeroasters/?next=%2F&hl=id',
   },
   {
     id: 'cafe-6',
@@ -95,22 +100,24 @@ let cafes = [
     kebersihan: '4.7',
     kenyamanan: '4.8',
     pelayanan: '4.2',
+    ig: 'https://www.instagram.com/rockmenandcoffee/?next=%2F&hl=id',
   },
   {
     id: 'cafe-7',
-    title: 'Cozy Cube Coffee ',
-    image: '/images/cozy.png',
-    location: 'Jl. Taman Cibeunying Utara No. 4, Cilaki, Bandung',
-    drinkprice: 'Rp 7.000 - Rp 35.000 / orang',
-    foodprice: 'Rp 30.000 - Rp 85.000 / orang',
-    category: 'Cafe',
-    reservasi: 'https://wa.me/628129770272?text=Halo%20Cozy%20Cube%20Cafe,%20saya%20ingin%20menanyakan%20terkait%20reservasi',
-    time: 'Senin - Minggu (10:00 - 22:00 WIB)',
+    title: 'Wip Koffie ',
+    image: '/images/wip.png',
+    location: 'Jl. Hasanudin No. 28, Dipatiukur, Bandung',
+    drinkprice: 'Rp 15.000 - Rp 55.000 / item',
+    foodprice: 'Rp 25.000 - Rp 69.000 / item',
+    category: 'Cafe and Eatery',
+    reservasi: 'https://wa.me/62817347774?text=Halo%20Wip%20Koffie,%20saya%20ingin%20menanyakan%20terkait%20reservasi',
+    time: 'Senin - Minggu (09:00 - 22:00 WIB)',
     bayar: 'Cash, Debet, QRIS',
-    rasa: '3.9',
-    kebersihan: '4.4',
-    kenyamanan: '4.6',
-    pelayanan: '4.0',
+    rasa: '4.4',
+    kebersihan: '4.5',
+    kenyamanan: '4.7',
+    pelayanan: '4.6',
+    ig: 'https://www.instagram.com/wip.koffie/?next=%2F&hl=id',
   },
   {
     id: 'cafe-8',
@@ -127,6 +134,7 @@ let cafes = [
     kebersihan: '4.4',
     kenyamanan: '4.5',
     pelayanan: '4.5',
+    ig: 'https://www.instagram.com/serantaucoffeespace/?next=%2F&hl=id',
   },
   {
     id: 'cafe-9',
@@ -143,6 +151,7 @@ let cafes = [
     kebersihan: '4.7',
     kenyamanan: '4.5',
     pelayanan: '4.4',
+    ig: 'https://www.instagram.com/delapanpadi/?next=%2F&hl=id',
   },
   {
     id: 'cafe-10',
@@ -159,6 +168,7 @@ let cafes = [
     kebersihan: '4.4',
     kenyamanan: '4.3',
     pelayanan: '4.2',
+    ig: 'https://www.instagram.com/brewspace.id/?hl=id',
   },
 ];
 

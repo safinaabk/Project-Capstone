@@ -12,10 +12,12 @@ function App() {
         <nav>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <a className="navigation" href="/">
+                Home
+              </a>
             </li>
             <li>
-              <a href="https://github.com/safinaabk/Project-Capstone" target="_blank">
+              <a className="navigation" href="https://github.com/safinaabk/Project-Capstone" target="_blank">
                 About Us
               </a>
             </li>
