@@ -1,8 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-function CafeItem({ id, title, image, location, description }) {
+function CafeItem({ id, title, image, location }) {
   return (
     <div className="cafe-item">
       <div className="cafe-item__header">
@@ -18,11 +17,5 @@ function CafeItem({ id, title, image, location, description }) {
     </div>
   );
 }
-CafeItem.propTypes = {
-  id: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-};
 
 export default CafeItem;

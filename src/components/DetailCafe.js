@@ -52,7 +52,7 @@ function DetailCafe({ ig, title, image, location, drinkprice, foodprice, categor
           </div>
           <div className="information_container">
             <div className="more_information">
-              <p className="for_information">For More Information</p>
+              <p className="for_information">More Information</p>
               <div className="contact_information">
                 {' '}
                 <a href={ig}>
@@ -72,42 +72,8 @@ function DetailCafe({ ig, title, image, location, drinkprice, foodprice, categor
               </div>
             </div>
           </div>
-          {/* <p className="for_reserv">For reservation</p>
-          <div className="contact_reservasi">
-            {' '}
-            <a href={reservasi}>
-              {' '}
-              <FaWhatsapp /> Contact Us
-            </a>
-          </div> */}
         </div>
       </div>
-      {/* <div className="detail-page__rating">
-        <div className="card-rating">
-          <div className="card-rating__name"> Rasa </div>
-          <div className="card-rating__nilai">{rasa}</div>
-        </div>
-        <div className="card-rating">
-          <div className="card-rating__name">Kebersihan</div>
-          <div className="card-rating__nilai">{kebersihan}</div>
-        </div>
-        <div className="card-rating">
-          <div className="card-rating__name">Kenyamanan</div>
-          <div className="card-rating__nilai">{kenyamanan}</div>
-        </div>
-        <div className="card-rating">
-          <div className="card-rating__name">Pelayanan</div>
-          <div className="card-rating__nilai">{pelayanan}</div>
-        </div>
-      </div> */}
-      <div className="detail-body">{/* <p className="detail-page__description">{description}</p> */}</div>
-      {/* <div className="add_komentar">
-        {' '}
-        <a href={reservasi} target="_blank">
-          {' '}
-          Contact Us
-        </a>
-      </div> */}
     </div>
   );
 }
