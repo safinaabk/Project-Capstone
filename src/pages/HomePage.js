@@ -16,7 +16,7 @@ class HomePage extends React.Component {
     return (
       <section>
         <CafeAppJumbotron />
-        <h2 className='home_jumbotron'>Choose Your favorite Cafe</h2>
+        <h2 className="home_jumbotron">Choose Your Choice</h2>
         <ListCafe cafes={this.state.cafes} />
       </section>
     );
